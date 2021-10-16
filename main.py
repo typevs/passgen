@@ -18,7 +18,7 @@ def main():
 
     if amount == '':
         amount = '8'
-    print(f'\nSenha Gerada:\n')
+    print(f'\nPassword Generated:\n')
     for i in range(int(amount)):
         
         

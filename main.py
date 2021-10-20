@@ -8,25 +8,28 @@ carac = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', '
 
 
 def main():
-    cmd('cls')
-    print(f'Put how many characters you want to generate (If you put 0 or nothing, it will come with 8)')
-    amount = input('> ')
-    cmd('cls')
-    
-    if amount == '0':
-        amount = '8'
-
-    if amount == '':
-        amount = '8'
-    print(f'\nPassword Generated:\n')
     try:
-        for i in range(int(amount)):
-        
-        
-            senha = print(random.choice(carac), end="")
-        print(f'\n')
-    except:
-        main()
+        cmd('cls')
+        print(f'Put how many characters you want to generate (If you put 0 or nothing, it will come with 8)')
+        amount = input('> ')
+        cmd('cls')
+    
+        if amount == '0':
+            amount = '8'
+
+        if amount == '':
+            amount = '8'
+        print(f'\nPassword Generated:\n')
+        try:
+            for i in range(int(amount)):
+           
+                password = print(random.choice(carac), end="")
+            print(f'\n')
+        except:
+            main()
+    except KeyboardInterrupt:
+        exit()
+  
         
 
 

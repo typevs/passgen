@@ -19,11 +19,14 @@ def main():
     if amount == '':
         amount = '8'
     print(f'\nPassword Generated:\n')
-    for i in range(int(amount)):
+    try:
+        for i in range(int(amount)):
         
         
-        password = print(random.choice(carac), end="")
-    print(f'\n')
+            senha = print(random.choice(carac), end="")
+        print(f'\n')
+    except:
+        main()
         
 
 
